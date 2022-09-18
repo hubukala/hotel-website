@@ -34,7 +34,7 @@ body {
     font-weight: 400;
     font-size: 25.3953px;
     line-height: 35px;
-    color: #FFFF;
+    color: #FFFFFF;
 }
 
 .navbar {
@@ -53,7 +53,7 @@ a {
     font-size: 24px;
     line-height: 33px;
     text-decoration: none;
-    color: #FFFF;
+    color: #FFFFFF;
 }
 
 a:hover {
@@ -73,4 +73,147 @@ a:hover {
     backdrop-filter: blur(6.25px);
 
     border-radius: 3.40909px;
+}
+
+.hotel-form {
+    position: absolute;
+    width: 537.88px;
+    height: 658.72px;
+    left: 849.55px;
+    top: 196.9px;
+
+    background: rgba(217, 217, 217, 0.1);
+    box-shadow: inset 39.1333px -39.1333px 39.1333px rgba(165, 165, 165, 0.1), inset -39.1333px 39.1333px 39.1333px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(39.1333px);
+    border-radius: 10px;
+}
+
+.form-label {
+    width: 166.89px;
+    height: 28.86px;
+    left: 872.67px;
+    top: 239.16px;
+    padding-bottom: 17.52px;;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23.234px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.input-field, .input-field-guest {
+    height: 70px;
+    background: #FFFFFF;
+    box-shadow: inset 18.3333px -18.3333px 18.3333px rgba(194, 185, 185, 0.1), inset -18.3333px 18.3333px 18.3333px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(18.3333px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 28.86px;
+}
+
+.input-field-guest {
+    margin-bottom: 15.46px;
+}
+
+.input-field-small-left, .input-field-small-right {
+    height: 70px;
+    width: 221.18px;
+    background: #FFFFFF;
+    box-shadow: inset 18.3333px -18.3333px 18.3333px rgba(194, 185, 185, 0.1), inset -18.3333px 18.3333px 18.3333px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(18.3333px);
+
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 28.86px;
+}
+
+.input-field-small-left {
+    margin-right:42.23px;
+}
+
+.input-box {
+    width: 80%;
+    height: 70%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    border: none;
+    color: #A99A9A;
+    background: none;
+}
+
+.form-container {
+    padding: 42.27px 28.15px 32.99px 23.12px;
+}
+
+.check-in-out-container {
+    display: flex;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.tick-box {
+    width: 62.33px;
+    height: 40.2px;
+    left: 866.64px;
+    top: 644.29px;
+    border: none;
+}
+
+.checkbox-label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.search-hotel-btn {
+    width: 486.6px;
+    height: 70.1px;
+    left: 872.67px;
+    top: 752.53px;
+    background: #FDC463;
+    box-shadow: inset 18.3333px -18.3333px 18.3333px rgba(194, 185, 185, 0.1), inset -18.3333px 18.3333px 18.3333px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(18.3333px);
+    border: none;
+    border-radius: 10px;
+    margin-top: 48.04px;
+    margin-bottom: 32px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26.8184px;
+    color: #070606;
+}
+
+.most-luxurious-container {
+    position: absolute;
+    width: 619.67px;
+    height: 247.41px;
+    left: 100.54px;
+    top: 287.61px;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 66.607px;
+    line-height: 80px;
+    letter-spacing: -0.035em;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
 }
