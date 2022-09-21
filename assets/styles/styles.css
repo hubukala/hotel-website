@@ -1,12 +1,24 @@
 html {
     font-family: 'Manrope', sans-serif;
     margin: 0;
+    font-weight: 400;
+    font-size: 24px;
 }
 
 body {
-    /* background-image: url("/assets/img/unsplash_M7GddPqJowg.png"); */
     margin: 0;
     padding: 0;
+}
+
+a {
+    font-style: normal;
+    line-height: 33px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: #FDC463;
 }
 
 .first-page {
@@ -15,57 +27,45 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    padding-right: 107px;
+    padding-left: 100px;
 }
 
 .topnav {
     display: flex;
-    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 25.77px;
     width: 100%;
 }
 
 .gloritel {
-    position: absolute;
-    width: 91.49px;
-    height: 32.72px;
-    left: 100.54px;
-    top: 25.77px;
+    display: flex;
+    justify-content: start;
+    width: 20%;
     font-style: normal;
-    font-weight: 400;
-    font-size: 25.3953px;
     line-height: 35px;
     color: #FFFFFF;
 }
 
 .navbar {
     display: flex;
-    justify-content: space-around;
-    position: absolute;
-    width: 525.81px;
-    height: 34.02px;
-    left: 667.57px;
-    top: 26.8px;
+    justify-content: end;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-right: 15px;
 }
 
-a {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 33px;
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-a:hover {
-    color: blue;
+.login-btn-container {
+    display: flex;
+    justify-content: end;
+    width:20%;
 }
 
 .login-btn {
-    position: absolute;
     width: 105.26px;
     height: 34.02px;
-    left: 1281.86px;
-    top: 26.8px;
     border: none;
 
     background: #FDC463;
@@ -75,17 +75,26 @@ a:hover {
     border-radius: 3.40909px;
 }
 
-.hotel-form {
-    position: absolute;
+.page-one-main {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+    margin-top: 136px;
+}
+
+.form-box {
+    display: flex;
+    justify-content: flex-end;
     width: 537.88px;
     height: 658.72px;
-    left: 849.55px;
-    top: 196.9px;
+    /* left: 849.55px;
+    top: 196.9px; */
 
     background: rgba(217, 217, 217, 0.1);
     box-shadow: inset 39.1333px -39.1333px 39.1333px rgba(165, 165, 165, 0.1), inset -39.1333px 39.1333px 39.1333px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(39.1333px);
     border-radius: 10px;
+    border: 1px solid yellow;
 }
 
 .form-label {
@@ -201,12 +210,8 @@ a:hover {
 }
 
 .most-luxurious-container {
-    position: absolute;
-    width: 619.67px;
-    height: 247.41px;
-    left: 100.54px;
-    top: 287.61px;
-
+    display: flex;
+    flex-direction: column;
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 600;
@@ -216,4 +221,55 @@ a:hover {
     text-transform: capitalize;
 
     color: #FFFFFF;
+    border: 1px solid white;
+}
+
+.shape-container {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid yellow;
+}
+
+.circle-play {
+    background: #FFFFFF;
+    width: 54px;
+    height: 54px;
+    border-radius: 40px;
+}
+
+.watch-demo-rectangle {
+    position: absolute;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    left: 35px;
+    background: #FFFFFF;
+    border-radius: 0px 20px 20px 0px;
+    width: 130.7px;
+    height: 35.05px;
+    border-radius: 40px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10.2105px;
+    letter-spacing: 0.1px;
+    line-height: 15px;
+    color: #000000;
+}
+
+@media (max-width: 860px) {
+    html {
+        font-size: 14px;
+    }
+
+    .first-page {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .navbar {
+        flex-direction: column;
+        gap: 0;
+    }
 }
