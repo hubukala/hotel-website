@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel website</title>
     <link rel="stylesheet" href="/assets/styles/styles.css">
+    <script src="https://kit.fontawesome.com/3159f3e283.js" crossorigin="anonymous"></script>
     <script type="module" src="./assets/scripts/app.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +44,9 @@
                 Luxurious Hotels <br>
                 Across the Globe
                 <div class="shape-container">
-                    <div class="circle-play"></div>
+                    <div class="circle-play">
+                        <i class="fa-sharp fa-solid fa-play"></i>
+                    </div>
                     <div class="watch-demo-rectangle">Watch demo video</div>
                 </div>
             </div>
@@ -55,6 +58,7 @@
                     </div>
                     <div class="input-field">
                         <input class="input-box" type="text" placeholder="try 'Pakistan' ">
+                        <i class="fa-solid fa-location-dot"></i>
                     </div>
                     <div class="check-in-out-container">
                         <div>
@@ -62,7 +66,8 @@
                                 Check in
                             </div>
                             <div class="input-field-small-left">
-                                <input type="text" class="input-box">
+                                <input type="text" class="input-box-small">
+                                <i class="fa-regular fa-calendar"></i>
                             </div>
                         </div>
                         <div>
@@ -70,7 +75,8 @@
                                 Check out
                             </div>
                             <div class="input-field-small-right">
-                                <input type="text" class="input-box">
+                                <input type="text" class="input-box-small">
+                                <i class="fa-regular fa-calendar"></i>
                             </div>
                         </div>
                     </div>
@@ -79,6 +85,7 @@
                     </div>
                     <div class="input-field-guest">
                         <input class="input-box" type="text" placeholder="How many guests?">
+                        <i class="fa-solid fa-angle-down"></i>
                     </div>
                     <div class="checkbox-container">
                         <input type="checkbox" class="tick-box">
@@ -89,7 +96,12 @@
             </div>
 
         </div>
-        
+
+        <div class="location-container">
+            <i class="fa-solid fa-location-dot"></i>
+            <span class="">Mercurser Hotel, Austria</span>
+        </div>
+
     </div>
 </body>
 </html>
