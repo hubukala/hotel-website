@@ -21,6 +21,10 @@ a:hover {
     color: #FDC463;
 }
 
+button {
+    cursor: pointer;
+}
+
 .first-page {
     background-image: url("/assets/img/unsplash_M7GddPqJowg.png");
     height: 1002px;
@@ -78,7 +82,6 @@ a:hover {
 .page-one-main {
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
     margin-top: 136px;
 }
 
@@ -94,7 +97,6 @@ a:hover {
     box-shadow: inset 39.1333px -39.1333px 39.1333px rgba(165, 165, 165, 0.1), inset -39.1333px 39.1333px 39.1333px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(39.1333px);
     border-radius: 10px;
-    border: 1px solid yellow;
 }
 
 .form-label {
@@ -117,7 +119,6 @@ a:hover {
     background: #FFFFFF;
     box-shadow: inset 18.3333px -18.3333px 18.3333px rgba(194, 185, 185, 0.1), inset -18.3333px 18.3333px 18.3333px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(18.3333px);
-    /* Note: backdrop-filter has minimal browser support */
 
     border-radius: 10px;
     display: flex;
@@ -148,8 +149,8 @@ a:hover {
     margin-right:42.23px;
 }
 
-.input-box {
-    width: 80%;
+.input-box, .input-box-small {
+    width: 85%;
     height: 70%;
     font-family: 'Inter';
     font-style: normal;
@@ -158,6 +159,10 @@ a:hover {
     border: none;
     color: #A99A9A;
     background: none;
+}
+
+.input-box-small {
+    width: 70%;
 }
 
 .form-container {
@@ -219,15 +224,16 @@ a:hover {
     line-height: 80px;
     letter-spacing: -0.035em;
     text-transform: capitalize;
-
     color: #FFFFFF;
-    border: 1px solid white;
+    padding-top: 95px;
+    margin-right: 15px;
+    min-width: 0;
 }
 
 .shape-container {
     display: flex;
     flex-direction: row;
-    border: 1px solid yellow;
+    padding-top: 25px;
 }
 
 .circle-play {
@@ -237,9 +243,20 @@ a:hover {
     border-radius: 40px;
 }
 
+.fa-sharp.fa-solid.fa-play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    color: #FDC463;
+    border-radius: 0px;
+}
+
 .watch-demo-rectangle {
     position: absolute;
-    margin-left: 100px;
+    margin-left: 106px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -249,7 +266,6 @@ a:hover {
     border-radius: 0px 20px 20px 0px;
     width: 130.7px;
     height: 35.05px;
-    border-radius: 40px;
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 500;
@@ -259,9 +275,35 @@ a:hover {
     color: #000000;
 }
 
-@media (max-width: 860px) {
+.location-container {
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    margin-top: 94px;
+    gap: 4px;
+}
+
+@media (max-width: 1067px) {
     html {
-        font-size: 14px;
+        font-size: 18px;
+    }
+
+    .first-page {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .navbar {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 678px) {
+    html {
+        font-size: 18px;
     }
 
     .first-page {
