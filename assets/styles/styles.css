@@ -35,6 +35,23 @@ li {
     display: inline;
 }
 
+input:focus {
+    outline: none;
+    color: black;
+}
+
+.validation-failed-container {
+    margin-bottom: 24px;
+}
+
+.validation-failed {
+    color: rgb(255, 0, 0);
+    font-size: 16px;
+    padding-left: 10px;
+    margin-bottom: 8px;
+    display: none;
+}
+
 .page-padding {
     padding-right: 100px;
     padding-left: 100px;
@@ -100,16 +117,18 @@ li {
 .form-box {
     display: flex;
     justify-content: flex-end;
-    width: 50%;
     max-width: 540px;
-    height: 658px;
+    height: 678px;
+    width: 50%;
     background: rgba(217, 217, 217, 0.1);
     backdrop-filter: blur(39.1333px);
     border-radius: 10px;
 }
 
 .form-container {
-    width: 88%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     padding: 42px 28px 32px 23px;
 }
 
@@ -128,39 +147,33 @@ li {
 
 .input-field, .input-field-guest {
     display: flex;
-    width: 100%;
     height: 70px;
     background: #FFFFFF;
     backdrop-filter: blur(18px);
     border-radius: 10px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 28px;
 }
 
 .input-field-guest {
-    margin-bottom: 15px;
+    display: flex;
 }
 
 .input-field-small-left, .input-field-small-right {
-    height: 70px;
-    width: 100%;
-    background: #FFFFFF;
-    backdrop-filter: blur(18.3333px);
-    border-radius: 10px;
     display: flex;
+    flex-direction: row;
+    height: 70px;
+    background: #FFFFFF;
+    border-radius: 10px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 28px;
-}
-
-.input-field-small-left {
-    margin-right: 42px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .input-box, .input-box-small {
     width: 85%;
-    height: 70%;
+    height: 70px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -170,19 +183,16 @@ li {
     background: none;
 }
 
-.input-box-small {
-    width: 70%;
-}
-
 .check-in-out-container {
     display: flex;
-    gap: 20px;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .checkbox-container {
     display: flex;
     align-items: center;
-    margin-bottom: 48px;
+    margin-bottom: 60px;
 }
 
 .tick-box {
@@ -207,7 +217,6 @@ li {
     backdrop-filter: blur(18.3333px);
     border: none;
     border-radius: 10px;
-    margin-bottom: 32px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -542,7 +551,7 @@ li {
 .footer-item {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
 }
 
 .footer-item li a {
@@ -567,35 +576,61 @@ li {
         font-size: 18px;
     }
 
+    a {
+        line-height: 0px;
+    }
+
+    .font-size-16 {
+        font-size: 12px;
+    }
+
+    .font-size-25 {
+        font-size: 17px;
+    }
+
+    .font-size-35 {
+        font-size: 25px;
+    }
+
     .first-page {
         padding-left: 50px;
         padding-right: 50px;
     }
+
     .navbar {
         gap: 20px;
     }
+    
     .navbar-list {
         gap: 15px;
     }
+
     .page-padding {
         padding-right: 50px;
         padding-left: 50px;
     }
+
     .watch-demo-rectangle {
         margin-left: 55px;
     }
+
     .gloritel {
         margin-left: 50px;
     }
+
     .login-btn {
         margin-right: 50px;
     }
+
+    .hero-page {
+        padding-top: 150px;
+        height: 650px;
+    }
+
     .form-box {
         height: 510px;
     }
 
-    .form-container {
-    }
     .form-label {
         font-size: 15px;
         padding-bottom: 3px;
@@ -615,27 +650,18 @@ li {
         height: 50px;
     }
 
-    .input-field-small-left {
-        margin-right: 42px;
-    }
-
     .input-box,
     .input-box-small {
         font-size: 15px;
     }
 
-    .input-box-small {
-        width: 70%;
-    }
-
-    .check-in-out-container {
-        display: flex;
-        gap: 15px;
-    }
-
     .tick-box {
         width: 30px;
         height: 30px;
+    }
+
+    .checkbox-container {
+        margin-bottom: 28px;
     }
 
     .checkbox-label {
@@ -646,10 +672,12 @@ li {
         height: 50px;
         font-size: 20px;
     }
+
     .most-luxurious-container {
         font-size: 35px;
         line-height: 45px;
     }
+
     .circle-play {
         position: relative;
     }
@@ -665,32 +693,314 @@ li {
         position: absolute;
         margin-left: 40px;
     }
+
+    .recommended-hotels-title {
+        font-size: 30px;
+    }
+
+    .recommended-hotels-content {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .learn-more {
+        font-size: 14px;
+    }
+
+    .benefits-title {
+        font-size: 30px;
+        margin-bottom: 10px;
+        text-decoration: solid;
+    }
+
+    .point-element {
+        margin-top: 45px;
+        position: absolute;
+        display: inline-block;
+        background: #FDC463;
+        height: 51px;
+        width: 51px;
+        border-radius: 0px 0px 0px 100px;
+    }
+
+    .point-number {
+        bottom: 0;
+        left: 15px;
+        position: relative;
+        font-size: 57px;
+    }
+
+    .point-description {
+        margin-left: 50px;
+        width: 100%;
+    }
+
+    .point-title {
+        font-size: 20px;
+    }
+
+    .newsletter-title {
+        font-size: 40px;
+    }
+
+    .newsletter-description {
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+
+    .footer-container {
+        height: 180px;
+    }
+
+    .footer-item {
+        gap: 0;
+    }
 }
 
-@media (max-width: 678px) {
+@media (max-width: 690px) {
     html {
         font-size: 18px;
     }
 
-    .first-page {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
     .navbar {
         gap: 20px;
+        padding-right: 20px;
     }
+
+    .navbar button {
+        display: none;
+    }
+
     .navbar-list {
         flex-direction: column;
         gap: 0;
     }
+
     .page-padding {
-        padding-right: 15px;
-        padding-left: 15px;
+        padding-right: 10px;
+        padding-left: 10px;
     }
+
     .gloritel {
         margin-left: 15px;
     }
+
     .login-btn {
         margin-right: 15px;
+    }
+
+    .hero-page {
+        flex-direction: column;
+        align-items: center;
+        height: 700px;
+    }
+
+    .form-box {
+        height: 330px;
+        width: 85%;
+        margin-bottom: 20px;
+    }
+
+    .form-container {
+        padding: 10px 28px 10px 28px;
+    }
+
+    .form-label {
+        font-size: 15px;
+        padding-bottom: 3px;
+    }
+
+    .input-field,
+    .input-field-guest {
+        height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .input-field-guest {
+        margin-bottom: 15px;
+    }
+
+    .input-field-small-left,
+    .input-field-small-right {
+        height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .input-box,
+    .input-box-small {
+        font-size: 15px;
+    }
+
+    .input-box-small {
+        width: 70%;
+    }
+
+    .check-in-out-container {
+        display: flex;
+        gap: 5px;
+    }
+
+    .tick-box {
+        width: 15px;
+        height: 15px;
+    }
+
+    .checkbox-container {
+        margin-bottom: 8px;
+    }
+
+    .checkbox-label {
+        font-size: 14px;
+    }
+
+    .search-hotel-btn {
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .most-luxurious-container {
+        display: flex;
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .recommended-hotels {
+        align-items: center;
+        padding: 60px 0px 0px 0px;
+    }
+
+    .recommended-hotels-title {
+        font-size: 30px;
+    }
+
+    .recommended-hotels-content {
+        display: flex;
+        width: 80%;
+        margin-top: 20px;
+        font-size: 18;
+        text-align: center;
+    }
+
+    .hotels-list-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hotel-1 {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .benefits-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .benefits-list-container {
+        width: 100%;
+    }
+
+    .pacific-image-container {
+        display: none;
+    }
+
+    .customer-feedback {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .feedback-description {
+        margin-bottom: 55px;
+    }
+
+    .feedback-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .feedback-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        height: 170px;
+        border: 1px solid #E7EAEC;
+        padding: 24px;
+        gap: 12px;
+    }
+
+    .avatar {
+        display: flex;
+        align-self: center;
+        max-width: 60px;
+        max-height: 60px;
+    }
+
+    .newsletter-description {
+        font-size: 16px;
+    }
+
+    .sub-form-container {
+        width: 70%;
+        height: 38px;
+        background: #EDEDED;
+        border-radius: 10px;
+    }
+
+    .sub-form-container input {
+        width: 75%;
+        height: 38px;
+        background: #EDEDED;
+        border: none;
+        border-radius: 10px 0px 0px 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sub-form-container button {
+        height: 38px;
+        font-size: 10px;
+    }
+
+    .footer-container {
+        height: 250px;
+        background: #FEE0AE;
+        padding: 38px 50px 38px 50px;
+        gap: 20px;
+    }
+
+    .footer-column {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 25%;
+    }
+
+    .footer-column .font-size-25{
+        font-size: 12px;
+    }
+
+    .footer-item {
+        gap: 8px;
+    }
+
+    .footer-social-column {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        font-size: 8px;
+    }
+
+    .footer-social-column i {
+        color: #000000;
+    }
+
+    .copyright-container {
+        padding-left: 38px;
     }
 }
