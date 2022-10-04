@@ -35,6 +35,18 @@ li {
     display: inline;
 }
 
+input {
+    text-indent: 5px;
+}
+
+input[type=date]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+}
+
+input[type=date]:focus::-webkit-datetime-edit {
+    color: black !important;
+}
+
 input:focus {
     outline: none;
     color: black;
@@ -115,113 +127,84 @@ input:focus {
 }
 
 .form-box {
-    display: flex;
-    justify-content: flex-end;
-    max-width: 540px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     height: 678px;
     width: 50%;
+    min-width: 500px;
+    max-width: 550px;
     background: rgba(217, 217, 217, 0.1);
     backdrop-filter: blur(39.1333px);
     border-radius: 10px;
-}
-
-.form-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
     padding: 42px 28px 32px 23px;
-}
-
-.form-label {
-    display: flex;
-    width: 100%;
-    height: 28px;
-    padding-bottom: 17px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 28px;
     color: #FFFFFF;
-}
-
-.input-field, .input-field-guest {
-    display: flex;
-    height: 70px;
-    background: #FFFFFF;
-    backdrop-filter: blur(18px);
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-}
-
-.input-field-guest {
-    display: flex;
-}
-
-.input-field-small-left, .input-field-small-right {
-    display: flex;
-    flex-direction: row;
-    height: 70px;
-    background: #FFFFFF;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-.input-box, .input-box-small {
-    width: 85%;
-    height: 70px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    border: none;
-    color: #A99A9A;
-    background: none;
-}
-
-.check-in-out-container {
-    display: flex;
-    flex-direction: row;
     gap: 10px;
 }
 
-.checkbox-container {
+.field-container {
+    grid-column: 1/3;
     display: flex;
-    align-items: center;
-    margin-bottom: 60px;
+    flex-direction: column;
+    gap: 5px;
 }
 
-.tick-box {
-    width: 40px;
-    height: 40px;
+.input-fullsize {
+    width: 85%;
     border: none;
+    border-radius: 10px;
+    font-size: 25px;
 }
 
-.checkbox-label {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    color: #FFFFFF;
+.field-box {
+    display: flex;
+    justify-content: start;
+    height: 80px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.field-checkin, .field-checkout {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.field-checkin {
+    grid-column: 1/2;
+}
+
+.field-checkout {
+    grid-column: 2/3;
+}
+
+.input-halfsize {
+    height: 80px;
+    border: none;
+    border-radius: 10px;
+    padding-right: 10px;
+    font-size: 25px;
+}
+
+.field-container-checkbox {
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.input-checkbox {
+    height: 30px;
+    width: 30px;
 }
 
 .search-hotel-btn {
-    width: 100%;
-    height: 70px;
-    background: #FDC463;
-    backdrop-filter: blur(18.3333px);
+    grid-column: 1/3;
     border: none;
+    height: 80px;
+    background: #FDC463;
     border-radius: 10px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
     font-size: 25px;
-    color: #070606;
 }
 
 .most-luxurious-container {
@@ -628,44 +611,27 @@ input:focus {
     }
 
     .form-box {
-        height: 510px;
+        height: 478px;
+        min-width: 350px;
+        max-width: 420px;
     }
 
-    .form-label {
-        font-size: 15px;
-        padding-bottom: 3px;
+    .input-fullsize {
+        font-size: 18px;
     }
 
-    .input-field,
-    .input-field-guest {
+    .field-box {
         height: 50px;
     }
 
-    .input-field-guest {
-        margin-bottom: 15px;
-    }
-
-    .input-field-small-left,
-    .input-field-small-right {
+    .input-halfsize {
         height: 50px;
+        font-size: 18px;
     }
 
-    .input-box,
-    .input-box-small {
-        font-size: 15px;
-    }
-
-    .tick-box {
-        width: 30px;
-        height: 30px;
-    }
-
-    .checkbox-container {
-        margin-bottom: 28px;
-    }
-
-    .checkbox-label {
-        font-size: 14px;
+    .input-checkbox {
+        height: 20px;
+        width: 20px;
     }
 
     .search-hotel-btn {
@@ -793,69 +759,38 @@ input:focus {
         flex-direction: column;
         align-items: center;
         height: 700px;
+        padding-bottom: 20px;
     }
 
     .form-box {
-        height: 330px;
-        width: 85%;
-        margin-bottom: 20px;
-    }
-
-    .form-container {
-        padding: 10px 28px 10px 28px;
-    }
-
-    .form-label {
-        font-size: 15px;
-        padding-bottom: 3px;
-    }
-
-    .input-field,
-    .input-field-guest {
-        height: 30px;
-        margin-bottom: 10px;
-    }
-
-    .input-field-guest {
-        margin-bottom: 15px;
-    }
-
-    .input-field-small-left,
-    .input-field-small-right {
-        height: 30px;
-        margin-bottom: 10px;
-    }
-
-    .input-box,
-    .input-box-small {
-        font-size: 15px;
-    }
-
-    .input-box-small {
-        width: 70%;
-    }
-
-    .check-in-out-container {
-        display: flex;
-        gap: 5px;
-    }
-
-    .tick-box {
-        width: 15px;
-        height: 15px;
-    }
-
-    .checkbox-container {
-        margin-bottom: 8px;
-    }
-
-    .checkbox-label {
+        height: 278px;
+        width: 80%;
+        min-width: 280px;
         font-size: 14px;
+        padding: 15px 20px 40px 20px;
+    }
+
+    .input-fullsize {
+        font-size: 12px;
+    }
+
+    .field-box {
+        height: 40px;
+    }
+
+    .input-halfsize {
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .input-checkbox {
+        height: 20px;
+        width: 20px;
     }
 
     .search-hotel-btn {
-        height: 30px;
-        font-size: 12px;
+        height: 40px;
+        font-size: 16px;
     }
 
     .most-luxurious-container {
