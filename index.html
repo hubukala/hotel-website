@@ -24,7 +24,7 @@
                     <li><a href="#location">Location</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#login">Login</a></li>
+                    <li class="login-link"><a href="#login">Login</a></li>
                 </ul>
                 <button class="login-btn">LOGIN</button>
             </div>
@@ -43,49 +43,44 @@
                     <div class="watch-demo-rectangle">Watch demo video</div>
                 </div>
             </div>
-            <div class="form-box">
-                <div class="form-container">
-                    <div class="form-label">
-                        Where you go?
+            <form class="form-box">
+                <div class="field-container">
+                    <label for="where-you-go">Where you go?</label>
+                    <div class="field-box">
+                        <input class="input-fullsize" type="text" placeholder="try “Pakistan”">
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
                     </div>
-                    <div class="input-field">
-                        <input class="input-box" type="text" placeholder="try 'Pakistan' ">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <div class="check-in-out-container">
-                        <div>
-                            <div class="form-label">
-                                Check in
-                            </div>
-                            <div class="input-field-small-left">
-                                <input type="text" class="input-box-small">
-                                <i class="fa-regular fa-calendar"></i>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="form-label">
-                                Check out
-                            </div>
-                            <div class="input-field-small-right">
-                                <input type="text" class="input-box-small">
-                                <i class="fa-regular fa-calendar"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-label">
-                        Guest
-                    </div>
-                    <div class="input-field-guest">
-                        <input class="input-box" type="text" placeholder="How many guests?">
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <div class="checkbox-container">
-                        <input type="checkbox" class="tick-box">
-                        <span class="checkbox-label">Pay when checking in?</span>
-                    </div>
-                    <button class="search-hotel-btn">Search hotels</button>
+                    <div class="validation-failed">not valid</div>
                 </div>
-            </div>
+                <div class="field-checkin">
+                    <label for="where-you-go">Check in</label>
+                    <input id="date" class="input-halfsize" type="date" required>
+                    <div class="validation-failed">not valid</div>
+                </div>
+                <div class="field-checkout">
+                    <label for="where-you-go">Check out</label>
+                    <input id="date" class="input-halfsize" type="date" required>
+                </div>
+                <div class="field-container">
+                    <label for="where-you-go">Guest</label>
+                    <div class="field-box">
+                        <select class="select-guest-amount">
+                            <option value="" disabled selected>How many guests?</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field-container-checkbox">
+                    <input class="input-checkbox" type="checkbox">
+                    <label for="where-you-go">Pay when checking in?</label>
+                </div>
+                <button class="search-hotel-btn">Search hotels</button>
+            </form>
         </section>
         <section class="recommended-hotels page-padding">
             <div class="recommended-hotels-title">
