@@ -17,6 +17,10 @@ a {
     color: #FFFFFF;
 }
 
+i {
+    color:#000000;
+}
+
 a:hover {
     color: #FDC463;
 }
@@ -35,8 +39,8 @@ li {
     display: inline;
 }
 
-input {
-    text-indent: 5px;
+input, select {
+    text-indent: 10px;
 }
 
 input[type=date]:required:invalid::-webkit-datetime-edit {
@@ -47,9 +51,13 @@ input[type=date]:focus::-webkit-datetime-edit {
     color: black !important;
 }
 
-input:focus {
+input:focus, select:focus {
     outline: none;
     color: black;
+}
+
+.login-link {
+    display: none;
 }
 
 .validation-failed-container {
@@ -58,10 +66,9 @@ input:focus {
 
 .validation-failed {
     color: rgb(255, 0, 0);
-    font-size: 16px;
+    font-size: 14px;
     padding-left: 10px;
-    margin-bottom: 8px;
-    display: none;
+    /* display: none; */
 }
 
 .page-padding {
@@ -149,8 +156,8 @@ input:focus {
     gap: 5px;
 }
 
-.input-fullsize {
-    width: 85%;
+.input-fullsize, .select-guest-amount {
+    width: 93%;
     border: none;
     border-radius: 10px;
     font-size: 25px;
@@ -162,6 +169,10 @@ input:focus {
     height: 80px;
     background-color: #FFFFFF;
     border-radius: 10px;
+}
+
+.field-box i {
+    align-self: center;
 }
 
 .field-checkin, .field-checkout {
@@ -184,6 +195,10 @@ input:focus {
     border-radius: 10px;
     padding-right: 10px;
     font-size: 25px;
+}
+
+.select-guest-amount {
+    width: 98%;
 }
 
 .field-container-checkbox {
@@ -726,6 +741,10 @@ input:focus {
 @media (max-width: 690px) {
     html {
         font-size: 18px;
+    }
+
+    .login-link {
+        display: block;
     }
 
     .navbar {
