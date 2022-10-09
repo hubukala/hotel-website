@@ -18,6 +18,20 @@ a {
     color: #FFFFFF;
 }
 
+h1 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 97%;
+    color: #000000;
+    margin: 0;
+}
+
+h2 {
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+}
+
 i {
     color:#000000;
 }
@@ -57,6 +71,31 @@ input:focus, select:focus {
     color: black;
 }
 
+.font-size-s {
+    font-size: 16px;
+}
+
+.font-size-m {
+    font-size: 25px;
+}
+
+.font-size-l {
+    font-size: 35px;
+}
+
+.page-padding {
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.margin-bottom-s {
+    margin-bottom: 10px;
+}
+
+.padding-bottom-l {
+    padding-bottom: 40px;
+}
+
 .login-link {
     display: none;
 }
@@ -72,17 +111,12 @@ input:focus, select:focus {
     display: none;
 }
 
-.page-padding {
-    padding-right: 100px;
-    padding-left: 100px;
-}
-
 .topnav {
-    position: absolute;
     display: flex;
     flex-direction: row;
-    width: 100%;
     justify-content: space-between;
+    width: 100%;
+    position: absolute;
     top: 25px;
 }
 
@@ -113,28 +147,28 @@ input:focus, select:focus {
 }
 
 .login-btn {
-    width: 105.26px;
-    height: 34.02px;
+    width: 105px;
+    height: 34px;
     border: none;
     background: #FDC463;
     box-shadow: inset 6.25px -6.25px 6.25px rgba(194, 185, 185, 0.1), inset -6.25px 6.25px 6.25px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(6.25px);
-    border-radius: 3.40909px;
+    border-radius: 3.5px;
     margin-right: 100px;
 }
 
-.hero-page {
-    padding-top: 200px;
+.section-hero {
     display: flex;
     justify-content: space-between;
-    background-image: url("/assets/img/unsplash_M7GddPqJowg.png");
+    padding-top: 200px;
+    background-image: url(../img/unsplash_M7GddPqJowg.png);
     height: 1000px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.form-box {
+.form-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -151,9 +185,9 @@ input:focus, select:focus {
 }
 
 .field-container {
-    grid-column: 1/3;
     display: flex;
     flex-direction: column;
+    grid-column: 1/3;
     gap: 5px;
 }
 
@@ -203,10 +237,10 @@ input:focus, select:focus {
 }
 
 .field-container-checkbox {
-    grid-column: 1/3;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    grid-column: 1/3;
 }
 
 .input-checkbox {
@@ -226,7 +260,6 @@ input:focus, select:focus {
 .most-luxurious-container {
     display: flex;
     flex-direction: column;
-    font-family: 'Manrope';
     font-style: normal;
     font-weight: 600;
     font-size: 65px;
@@ -238,10 +271,13 @@ input:focus, select:focus {
     margin-right: 15px;
 }
 
+.most-luxurious-content {
+    margin-bottom: 25px;
+}
+
 .shape-container {
     display: flex;
     flex-direction: row;
-    padding-top: 25px;
 }
 
 .circle-play {
@@ -264,8 +300,8 @@ input:focus, select:focus {
 
 .watch-demo-rectangle {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     align-self: center;
     position: absolute;
     margin-left: 40px;
@@ -283,38 +319,22 @@ input:focus, select:focus {
 .location-container {
     display: flex;
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
     font-size: 12px;
     line-height: 15px;
     color: #FFFFFF;
-    margin-top: 94px;
     gap: 4px;
 }
 
-.recommended-hotels {
-    padding: 61px 107px 61px 100px;
+.section-recommended-hotels {
     display: flex;
     flex-direction: column;
-}
-
-.recommended-hotels-title {
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 39.646px;
-    line-height: 97.52%;
-    color: #000000;
+    padding: 61px 107px 61px 100px;
 }
 
 .recommended-hotels-content {
     display: flex;
     width: 50%;
-    margin-top: 20px;
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25.3953px;
+    font-size: 25px;
     line-height: 35px;
     color: #000000;
     margin-bottom: 31px;
@@ -342,7 +362,6 @@ input:focus, select:focus {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    margin-top: 11px;
 }
 
 .hotel-title-container {
@@ -353,8 +372,8 @@ input:focus, select:focus {
 
 .hotel-location-container {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     color: black;
     margin-right: 20px;
 }
@@ -362,18 +381,6 @@ input:focus, select:focus {
 .fa-sharp.fa-solid.fa-star {
     font-size: 15px;
     color: #F8A401;
-}
-
-.font-size-16 {
-    font-size: 16px;
-}
-
-.font-size-25 {
-    font-size: 25px;
-}
-
-.font-size-35 {
-    font-size: 35px;
 }
 
 .ratings-amount {
@@ -385,10 +392,10 @@ input:focus, select:focus {
     font-size: 18px;
 }
 
-.benefits-container {
-    padding: 61px 107px 61px 100px;
+.section-benefits {
     display: flex;
     flex-direction: row;
+    padding: 61px 107px 61px 100px;
     gap: 20px;
     margin-bottom: 80px;
 }
@@ -398,35 +405,34 @@ input:focus, select:focus {
     width: 60%;
 }
 
-.benefits-list-container {
+.benefits-container {
     display: flex;
     flex-direction: column;
     width: 40%;
 }
 
 .benefits-title {
-    font-family: 'Manrope';
     font-size: 45px;
     margin-bottom: 50px;
 }
 
 .point-container {
     display: flex;
-    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .point-element {
-    margin-top: 45px;
-    position: absolute;
     display: inline-block;
+    position: absolute;
     background: #FDC463;
     height: 81px;
     width: 81px;
     border-radius: 0px 0px 0px 100px;
+    margin-top: 50px;
 }
 
 .point-number {
-    bottom: 11px;
+    bottom: 10px;
     left: 30px;
     position: relative;
     font-size: 77px;
@@ -441,7 +447,7 @@ input:focus, select:focus {
     font-size: 40px;
 }
 
-.customer-feedback {
+.section-feedback {
     margin-bottom: 105px;
 }
 
@@ -449,13 +455,13 @@ input:focus, select:focus {
     margin-bottom: 55px;
 }
 
-.feedback-list {
+.feedback-container {
     display: flex;
     flex-direction: row;
     gap: 24px;
 }
 
-.feedback-container {
+.feedback-box {
     display: flex;
     flex-direction: column;
     width: 33%;
@@ -472,7 +478,7 @@ input:focus, select:focus {
     max-height: 60px;
 }
 
-.newsletter {
+.section-newsletter {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -488,14 +494,14 @@ input:focus, select:focus {
     margin-bottom: 50px;
 }
 
-.sub-form-container {
+.sub-container {
     width: 70%;
     height: 68px;
     background: #EDEDED;
     border-radius: 10px;
 }
 
-.sub-form-container input {
+.sub-container input {
     width: 75%;
     height: 68px;
     background: #EDEDED;
@@ -505,7 +511,7 @@ input:focus, select:focus {
     padding: 0;
 }
 
-.sub-form-container button {
+.sub-container button {
     width: 25%;
     height: 68px;
     border-radius: 0px 10px 10px 0px;
@@ -575,19 +581,29 @@ input:focus, select:focus {
         font-size: 18px;
     }
 
+    h2 {
+        font-size: 25px;
+        margin: 0;
+        padding: 0;
+    }
+
     a {
         line-height: 0px;
     }
 
-    .font-size-16 {
+    h1 {
+        font-size: 30px;
+    }
+
+    .font-size-s {
         font-size: 12px;
     }
 
-    .font-size-25 {
+    .font-size-m {
         font-size: 17px;
     }
 
-    .font-size-35 {
+    .font-size-l {
         font-size: 25px;
     }
 
@@ -621,12 +637,12 @@ input:focus, select:focus {
         margin-right: 50px;
     }
 
-    .hero-page {
+    .section-hero {
         padding-top: 150px;
         height: 650px;
     }
 
-    .form-box {
+    .form-container {
         height: 478px;
         min-width: 350px;
         max-width: 420px;
@@ -664,6 +680,10 @@ input:focus, select:focus {
         line-height: 45px;
     }
 
+    .most-luxurious-content {
+        margin-bottom: 10px;
+    }
+
     .circle-play {
         position: relative;
     }
@@ -678,10 +698,6 @@ input:focus, select:focus {
     .watch-demo-rectangle {
         position: absolute;
         margin-left: 40px;
-    }
-
-    .recommended-hotels-title {
-        font-size: 30px;
     }
 
     .recommended-hotels-content {
@@ -779,14 +795,14 @@ input:focus, select:focus {
         margin-right: 15px;
     }
 
-    .hero-page {
+    .section-hero {
         flex-direction: column;
         align-items: center;
         height: 700px;
         padding-bottom: 20px;
     }
 
-    .form-box {
+    .form-container {
         height: 278px;
         width: 80%;
         min-width: 280px;
@@ -824,28 +840,23 @@ input:focus, select:focus {
         font-size: 40px;
     }
 
-    .recommended-hotels {
+    .section-recommended-hotels {
         align-items: center;
         padding: 60px 0px 0px 0px;
-    }
-
-    .recommended-hotels-title {
-        font-size: 30px;
     }
 
     .recommended-hotels-content {
         display: flex;
         width: 80%;
-        margin-top: 20px;
         font-size: 18;
         text-align: center;
     }
 
     .hotels-list-container {
         display: flex;
-        align-items: center;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
     }
 
     .hotel-1 {
@@ -853,12 +864,12 @@ input:focus, select:focus {
         margin-bottom: 15px;
     }
 
-    .benefits-container {
+    .section-benefits {
         flex-direction: column;
         text-align: center;
     }
 
-    .benefits-list-container {
+    .benefits-container {
         width: 100%;
     }
 
@@ -866,7 +877,7 @@ input:focus, select:focus {
         display: none;
     }
 
-    .customer-feedback {
+    .section-feedback {
         margin-bottom: 40px;
         text-align: center;
     }
@@ -875,14 +886,14 @@ input:focus, select:focus {
         margin-bottom: 55px;
     }
 
-    .feedback-list {
+    .feedback-container {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 24px;
     }
 
-    .feedback-container {
+    .feedback-box {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -904,14 +915,14 @@ input:focus, select:focus {
         font-size: 16px;
     }
 
-    .sub-form-container {
+    .sub-container {
         width: 70%;
         height: 38px;
         background: #EDEDED;
         border-radius: 10px;
     }
 
-    .sub-form-container input {
+    .sub-container input {
         width: 75%;
         height: 38px;
         background: #EDEDED;
@@ -921,7 +932,7 @@ input:focus, select:focus {
         padding: 0;
     }
 
-    .sub-form-container button {
+    .sub-container button {
         height: 38px;
         font-size: 10px;
     }
