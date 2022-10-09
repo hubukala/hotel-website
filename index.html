@@ -21,9 +21,9 @@
             <div class="navbar">
                 <ul class="navbar-list">
                     <li><a href="#hotels">Find Hotels</a></li>
-                    <li><a href="#location">Location</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a id="recommended-btn" href="#recommended">Recommended</a></li>
+                    <li><a id="benefits-btn" href="#benefits">Benefits</a></li>
+                    <li><a id="feedback-btn" href="#feedback">Feedback</a></li>
                     <li class="login-link"><a href="#login">Login</a></li>
                 </ul>
                 <button class="login-btn">LOGIN</button>
@@ -43,28 +43,28 @@
                     <div class="watch-demo-rectangle">Watch demo video</div>
                 </div>
             </div>
-            <form class="form-box">
+            <form id="form" class="form-box">
                 <div class="field-container">
                     <label for="where-you-go">Where you go?</label>
                     <div class="field-box">
-                        <input class="input-fullsize" type="text" placeholder="try “Pakistan”">
+                        <input id="input-place" class="input-fullsize" type="text" placeholder="try “Pakistan”">
                         <i class="fa-sharp fa-solid fa-location-dot"></i>
                     </div>
-                    <div class="validation-failed">not valid</div>
+                    <div id="location-not-valid" class="validation-failed">Location is not valid</div>
                 </div>
                 <div class="field-checkin">
                     <label for="where-you-go">Check in</label>
-                    <input id="date" class="input-halfsize" type="date" required>
-                    <div class="validation-failed">not valid</div>
+                    <input id="input-checkin" class="input-halfsize" type="date" required>
+                    <div id="date-not-valid" class="validation-failed">Wrong dates selected</div>
                 </div>
                 <div class="field-checkout">
                     <label for="where-you-go">Check out</label>
-                    <input id="date" class="input-halfsize" type="date" required>
+                    <input id="input-checkout" class="input-halfsize" type="date" required>
                 </div>
                 <div class="field-container">
                     <label for="where-you-go">Guest</label>
                     <div class="field-box">
-                        <select class="select-guest-amount">
+                        <select id="select-guest" class="select-guest-amount">
                             <option value="" disabled selected>How many guests?</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -74,6 +74,7 @@
                             <option value="6">6</option>
                         </select>
                     </div>
+                    <div id="guest-not-valid" class="validation-failed">Guest amount is not valid</div>
                 </div>
                 <div class="field-container-checkbox">
                     <input class="input-checkbox" type="checkbox">
@@ -82,7 +83,7 @@
                 <button class="search-hotel-btn">Search hotels</button>
             </form>
         </section>
-        <section class="recommended-hotels page-padding">
+        <section id="section-recommended" class="recommended-hotels page-padding">
             <div class="recommended-hotels-title">
                 Recommended Hotels
             </div>
@@ -132,7 +133,7 @@
                 </div>
             </div>
         </section>
-        <section class="benefits-container page-padding">
+        <section id="section-benefits" class="benefits-container page-padding">
             <div class="pacific-image-container">
                 <img class="hotel-pic" src="/assets/img/pacific.png" alt="">
             </div>
@@ -167,7 +168,7 @@
                 </div>
             </div>
         </section>
-        <section class="customer-feedback page-padding">
+        <section id="section-feedback" class="customer-feedback page-padding">
             <div class="font-size-35">Our Customer Feedback</div>
             <div class="feedback-description font-size-25">Don't take our word for it. Trust our customers</div>
             <div class="feedback-list">
