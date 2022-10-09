@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel website</title>
-    <link rel="stylesheet" href="/assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/styles.css" type="text/css">
     <script src="https://kit.fontawesome.com/3159f3e283.js" crossorigin="anonymous"></script>
-    <script type="module" src="./assets/scripts/app.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Manrope&display=swap" rel="stylesheet">
@@ -31,7 +30,7 @@
         </nav>
     </header>
     <main>
-        <section class="hero-page page-padding">
+        <section class="section-hero page-padding">
             <div class="most-luxurious-container">
                 Find Most <br>
                 Luxurious Hotels <br>
@@ -43,7 +42,7 @@
                     <div class="watch-demo-rectangle">Watch demo video</div>
                 </div>
             </div>
-            <form id="form" class="form-box">
+            <form id="form" class="form-container">
                 <div class="field-container">
                     <label for="where-you-go">Where you go?</label>
                     <div class="field-box">
@@ -83,19 +82,17 @@
                 <button class="search-hotel-btn">Search hotels</button>
             </form>
         </section>
-        <section id="section-recommended" class="recommended-hotels page-padding">
-            <div class="recommended-hotels-title">
-                Recommended Hotels
-            </div>
+        <section id="section-recommended" class="section-recommended-hotels page-padding">
+            <h1>Recommended Hotels</h1>
             <div class="recommended-hotels-content">
                 Book hotels as based upon experienced the best booking ever. Highly recommended
             </div>
             <div class="hotels-list-container">
                 <div class="hotel-1">
-                    <img class="hotel-pic" src="/assets/img/unsplash_MXbM1NrRqtI.png" alt="">
+                    <img class="hotel-pic" src="assets/img/unsplash_MXbM1NrRqtI.png" alt="">
                     <div class="hotel-description-container">
                         <div class="hotel-title-container">
-                            <div class="font-size-35">Delight Hotel</div>
+                            <h2>Delight Hotel</h2>
                             <div>
                                 <i class="fa-sharp fa-solid fa-star"></i>
                                 <i class="fa-sharp fa-solid fa-star"></i>
@@ -112,10 +109,10 @@
                     </div>
                 </div>
                 <div class="hotel-1">
-                    <img class="hotel-pic" src="/assets/img/royal.png" alt="">
+                    <img class="hotel-pic" src="assets/img/royal.png" alt="">
                     <div class="hotel-description-container">
                         <div class="hotel-title-container">
-                            <div class="font-size-35">Royal Hotel</div>
+                            <h2>Royal Hotel</h2>
                             <div>
                                 <i class="fa-sharp fa-solid fa-star"></i>
                                 <i class="fa-sharp fa-solid fa-star"></i>
@@ -126,25 +123,25 @@
                             </div>
                         </div>
                         <div class="hotel-location-container">
-                            <div class="font-size-25">Singapore</div>
+                            <div class="font-size-m">Singapore</div>
                             <div class="learn-more">Learn More</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="section-benefits" class="benefits-container page-padding">
+        <section id="section-benefits" class="section-benefits page-padding">
             <div class="pacific-image-container">
-                <img class="hotel-pic" src="/assets/img/pacific.png" alt="">
+                <img class="hotel-pic" src="assets/img/pacific.png" alt="">
             </div>
             <div class="benefits-list-container">
-                <div class="benefits-title">Benefits of using our services</div>
+                <h1 class="benefits-title">Benefits of using our services</h1>
                 <div class="point-container">
                     <div class="point-element"></div>
                     <div class="point-number">01</div>
                     <div class="point-description">
-                        <div class="point-title">Best Breakfast</div>
-                        <div class="font-size-16">Amet minim mollit non deserunt ahjas ullamco est sit aliqua dolor amet sint.
+                        <h2 class="point-title">Best Breakfast</h2>
+                        <div class="font-size-s">Amet minim mollit non deserunt ahjas ullamco est sit aliqua dolor amet sint.
                             Velit officia consequat</div>
                     </div>
                 </div>
@@ -152,8 +149,8 @@
                     <div class="point-element"></div>
                     <div class="point-number">02</div>
                     <div class="point-description">
-                        <div class="point-title">Parking Area</div>
-                        <div class="font-size-16">Amet minim mollit non deserunt ahjas ullamco est sit aliqua dolor amet sint.
+                        <h2 class="point-title">Parking Area</h2>
+                        <div class="font-size-s">Amet minim mollit non deserunt ahjas ullamco est sit aliqua dolor amet sint.
                             Velit officia consequat</div>
                     </div>
                 </div>
@@ -161,41 +158,41 @@
                     <div class="point-element"></div>
                     <div class="point-number">03</div>
                     <div class="point-description">
-                        <div class="point-title">Free Electricity</div>
-                        <div class="font-size-16">Amet minim mollit non deserunt ahjas ullamco est sit aliqua dolor amet sint.
+                        <h2 class="point-title">Free Electricity</h2>
+                        <div class="font-size-s">Amet minim mollit non deserunt ahjas ullamco est sit aliqua dolor amet sint.
                             Velit officia consequat</div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="section-feedback" class="customer-feedback page-padding">
-            <div class="font-size-35">Our Customer Feedback</div>
-            <div class="feedback-description font-size-25">Don't take our word for it. Trust our customers</div>
-            <div class="feedback-list">
-                <div class="feedback-container">
-                    <img class="avatar" src="./assets/img/avatars/woman-1.png" alt="">
-                    <div class="font-size-25">Floyd Miles</div>
-                    <div class="font-size-16">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+        <section id="section-feedback" class="section-feedback page-padding">
+            <h1>Our Customer Feedback</h1>
+            <div class="feedback-description font-size-m">Don't take our word for it. Trust our customers</div>
+            <div class="feedback-container">
+                <div class="feedback-box">
+                    <img class="avatar" src="assets/img/avatars/woman-1.png" alt="">
+                    <div class="font-size-m">Floyd Miles</div>
+                    <div class="font-size-s">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
                     mollit.</div>
                 </div>
-                <div class="feedback-container">
-                    <img class="avatar" src="./assets/img/avatars/ronald.png" alt="">
-                    <div class="font-size-25">Ronald Richards</div>
-                    <div class="font-size-16">ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+                <div class="feedback-box">
+                    <img class="avatar" src="assets/img/avatars/ronald.png" alt="">
+                    <div class="font-size-m">Ronald Richards</div>
+                    <div class="font-size-s">ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
                     sunt nostrud amet.</div>
                 </div>
-                <div class="feedback-container">
-                    <img class="avatar" src="./assets/img/avatars/savannah.png" alt="">
-                    <div class="font-size-25">Savannah Nguyen</div>
-                    <div class="font-size-16">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                <div class="feedback-box">
+                    <img class="avatar" src="assets/img/avatars/savannah.png" alt="">
+                    <div class="font-size-m">Savannah Nguyen</div>
+                    <div class="font-size-s">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
                     mollit. Exercitation veniam consequat sunt nostrud amet.</div>
                 </div>
             </div>
         </section>
-        <section class="newsletter page-padding">
-            <div class="font-size-35">Subscribe to Our Newsletter</div>
+        <section class="section-newsletter page-padding">
+            <h1>Subscribe to Our Newsletter</h1>
             <div class="newsletter-description">Don’t miss this opportunity. Subscribe now</div>
-            <div class="sub-form-container">
+            <div class="sub-container">
                 <form action="">
                     <input type="text"><button>SUBSCRIBE</button>
                 </form>
@@ -205,14 +202,14 @@
     <footer>
         <div class="footer-container">
             <div class="footer-column footer-column-1">
-                <div class="font-size-25">Gloritel</div>
-                <div class="footer-gloritel-description font-size-16">
+                <h2 class="font-size-m">Gloritel</h2>
+                <div class="footer-gloritel-description font-size-s">
                     Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
                 </div>
             </div>
             <div class="footer-column">
-                <div class="font-size-25">Quick Links</div>
-                <ul class="footer-item font-size-16">
+                <h2 class="font-size-m">Quick Links</h2>
+                <ul class="footer-item font-size-s">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#hotels">Hotels</a></li>
                     <li><a href="#location">Location</a></li>
@@ -220,16 +217,16 @@
                 </ul>
             </div>
             <div class="footer-column">
-                <div class="font-size-25">Information</div>
-                <ul class="footer-item font-size-16">
+                <h2 class="font-size-m">Information</h2>
+                <ul class="footer-item font-size-s">
                     <li><a href="#privacy">Privacy Police</a></li>
                     <li><a href="#terms">Terms of Service</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-column">
-                <div class="font-size-25">Social</div>
-                <div class="footer-social-column font-size-16">
+                <h2 class="font-size-m">Social</h2>
+                <div class="footer-social-column font-size-s">
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-square-instagram"></i>
                     <i class="fa-brands fa-twitter"></i>
@@ -239,5 +236,6 @@
         </div>
         <div class="copyright-container">Copyright © 2022 | Designed by Hina HM</div>
     </footer>
+    <script src="assets/scripts/app.js"></script>
 </body>
 </html>
