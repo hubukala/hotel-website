@@ -3,6 +3,7 @@ html {
     margin: 0;
     font-weight: 400;
     font-size: 24px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
 
 a {
     font-style: normal;
-    line-height: 33px;
+    line-height: 30px;
     text-decoration: none;
     color: #FFFFFF;
 }
@@ -68,7 +69,7 @@ input:focus, select:focus {
     color: rgb(255, 0, 0);
     font-size: 14px;
     padding-left: 10px;
-    /* display: none; */
+    display: none;
 }
 
 .page-padding {
@@ -641,6 +642,10 @@ input:focus, select:focus {
 
     .input-halfsize {
         height: 50px;
+        font-size: 18px;
+    }
+
+    .select-guest-amount {
         font-size: 18px;
     }
 
