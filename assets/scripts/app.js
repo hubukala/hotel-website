@@ -11,10 +11,22 @@ const dateNotValid = document.getElementById("date-not-valid");
 const recommendedButton = document.getElementById("recommended-btn");
 const benefitsButton = document.getElementById("benefits-btn");
 const feedbackButton = document.getElementById("feedback-btn");
+const hotelsButton = document.getElementById("hotels-btn");
 
 const sectionRecommended = document.getElementById("section-recommended");
 const sectionBenefits = document.getElementById("section-benefits");
 const sectionFeedback = document.getElementById("section-feedback");
+const formFindHotels = document.getElementById("form");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  checkInputs();
+});
+
+hotelsButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  formFindHotels.scrollIntoView(true);
+});
 
 recommendedButton.addEventListener("click", (e) => {
   e.preventDefault();
@@ -31,19 +43,9 @@ feedbackButton.addEventListener("click", (e) => {
   sectionFeedback.scrollIntoView(true);
 });
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  checkInputs();
-});
-
 place.addEventListener("input", (e) => {
   e.preventDefault();
   locationNotValid.style.display = "none";
-});
-
-guestAmount.addEventListener("input", (e) => {
-  e.preventDefault();
-  guestNotValid.style.display = "none";
 });
 
 checkInDate.addEventListener("input", (e) => {
@@ -54,6 +56,11 @@ checkInDate.addEventListener("input", (e) => {
 checkOutDate.addEventListener("input", (e) => {
   e.preventDefault();
   dateNotValid.style.display = "none";
+});
+
+guestAmount.addEventListener("input", (e) => {
+  e.preventDefault();
+  guestNotValid.style.display = "none";
 });
 
 function checkInputs() {
