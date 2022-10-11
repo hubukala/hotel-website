@@ -798,12 +798,12 @@ input:focus, select:focus {
     .section-hero {
         flex-direction: column;
         align-items: center;
-        height: 800px;
+        height: 850px;
         padding-bottom: 20px;
     }
 
     .form-container {
-        height: 380px;
+        height: 420px;
         width: 80%;
         min-width: 280px;
         font-size: 14px;
@@ -888,6 +888,10 @@ input:focus, select:focus {
         text-align: center;
     }
 
+    .section-feedback h1 {
+        margin-bottom: 5px;
+    }
+
     .feedback-description {
         margin-bottom: 55px;
     }
@@ -919,6 +923,7 @@ input:focus, select:focus {
 
     .section-newsletter h1 {
         font-size: 22px;
+        margin-bottom: 5px;
         justify-content: center;
         align-items: center;
     }
