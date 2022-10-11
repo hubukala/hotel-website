@@ -798,19 +798,22 @@ input:focus, select:focus {
     .section-hero {
         flex-direction: column;
         align-items: center;
-        height: 700px;
+        height: 800px;
         padding-bottom: 20px;
     }
 
     .form-container {
-        height: 278px;
+        height: 380px;
         width: 80%;
         min-width: 280px;
         font-size: 14px;
-        padding: 15px 20px 40px 20px;
+        padding: 15px 20px 5px 20px;
+        background: rgba(97, 97, 97, 0.596);
+        backdrop-filter: blur(39.1333px);
     }
 
     .input-fullsize {
+        width: 92%;
         font-size: 12px;
     }
 
@@ -842,7 +845,7 @@ input:focus, select:focus {
 
     .section-recommended-hotels {
         align-items: center;
-        padding: 60px 0px 0px 0px;
+        padding: 60px 0px 40px 0px;
     }
 
     .recommended-hotels-content {
@@ -867,6 +870,8 @@ input:focus, select:focus {
     .section-benefits {
         flex-direction: column;
         text-align: center;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .benefits-container {
@@ -878,6 +883,7 @@ input:focus, select:focus {
     }
 
     .section-feedback {
+        margin-top: 0;
         margin-bottom: 40px;
         text-align: center;
     }
@@ -911,8 +917,15 @@ input:focus, select:focus {
         max-height: 60px;
     }
 
+    .section-newsletter h1 {
+        font-size: 22px;
+        justify-content: center;
+        align-items: center;
+    }
+
     .newsletter-description {
-        font-size: 16px;
+        font-size: 14px;
+        margin-bottom: 20px;
     }
 
     .sub-container {
@@ -934,7 +947,7 @@ input:focus, select:focus {
 
     .sub-container button {
         height: 38px;
-        font-size: 10px;
+        font-size: 8px;
     }
 
     .footer-container {
@@ -951,7 +964,7 @@ input:focus, select:focus {
         width: 25%;
     }
 
-    .footer-column .font-size-25{
+    .footer-column .font-size-m{
         font-size: 12px;
     }
 
