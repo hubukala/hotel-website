@@ -18,66 +18,68 @@ const sectionBenefits = document.getElementById("section-benefits");
 const sectionFeedback = document.getElementById("section-feedback");
 const formFindHotels = document.getElementById("form");
 
+let isFormValid = false;
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   checkInputs();
+  if (isFormValid === true) {
+    alert("validation successful");
+  }
 });
 
 hotelsButton.addEventListener("click", (e) => {
-  e.preventDefault();
   formFindHotels.scrollIntoView(true);
 });
 
 recommendedButton.addEventListener("click", (e) => {
-  e.preventDefault();
   sectionRecommended.scrollIntoView(true);
 });
 
 benefitsButton.addEventListener("click", (e) => {
-  e.preventDefault();
   sectionBenefits.scrollIntoView(true);
 });
 
 feedbackButton.addEventListener("click", (e) => {
-  e.preventDefault();
   sectionFeedback.scrollIntoView(true);
 });
 
 place.addEventListener("input", (e) => {
-  e.preventDefault();
   locationNotValid.style.display = "none";
 });
 
 checkInDate.addEventListener("input", (e) => {
-  e.preventDefault();
   dateNotValid.style.display = "none";
 });
 
 checkOutDate.addEventListener("input", (e) => {
-  e.preventDefault();
   dateNotValid.style.display = "none";
 });
 
 guestAmount.addEventListener("input", (e) => {
-  e.preventDefault();
   guestNotValid.style.display = "none";
 });
 
 function checkInputs() {
-  const locationValue = place.value;
-  const checkInDateValue = checkInDate.value;
-  const checkOutDateValue = checkOutDate.value;
-  const guestAmountValue = guestAmount.value;
-
-  if (locationValue === "") {
+  if (place.value === "") {
     locationNotValid.style.display = "block";
   }
 
-  if (guestAmountValue === "") {
+  if (guestAmount.value === "") {
     guestNotValid.style.display = "block";
   }
 
-  if (checkInDateValue >= checkOutDateValue) {
+  if (checkInDate.value >= checkOutDate.value) {
     dateNotValid.style.display = "block";
+  }
+
+  if (
+    locationNotValid.style.display === "none" &&
+    guestNotValid.style.display === "none" &&
+    dateNotValid.style.display === "none"
+  ) {
+    isFormValid = true;
+  } else {
+    isFormValid = false;
   }
 }
