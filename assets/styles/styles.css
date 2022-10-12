@@ -391,6 +391,7 @@ input:focus, select:focus {
 .learn-more {
     text-decoration-line: underline;
     font-size: 18px;
+    color: #000000;
 }
 
 .section-benefits {
