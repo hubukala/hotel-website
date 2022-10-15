@@ -377,6 +377,7 @@ input:focus, select:focus {
     align-items: center;
     color: black;
     margin-right: 20px;
+    gap: 10px;
 }
 
 .fa-sharp.fa-solid.fa-star {
